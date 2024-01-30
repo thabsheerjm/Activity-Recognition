@@ -38,13 +38,9 @@ class Dataset:
         features = []
         labels = []
         paths_to_files = []
-<<<<<<< HEAD
         print(self.class_list[0])
         for class_idx, class_name in enumerate(self.class_list[0:3]):
-=======
 
-        for class_idx, class_name in enumerate(self.class_list):
->>>>>>> 8120bc942b69f839086a6f96ebf12ddefb21305f
             video_files_list = os.listdir(os.path.join(self.directory,class_name))
 
             for file_name in video_files_list:
@@ -57,24 +53,13 @@ class Dataset:
                     labels.append(class_idx) # labels in int
                     paths_to_files.append(path_to_video)
 
-<<<<<<< HEAD
         np.save('data/features.npy', np.asarray(features))
         np.save('data/labels.npy', np.asarray(labels))
         np.save('data/paths.npy', np.asarray(paths_to_files))
 
         return True
-=======
-        return np.asarray(features), np.asarray(labels), paths_to_files
->>>>>>> 8120bc942b69f839086a6f96ebf12ddefb21305f
-                    
 
 # main 
         
 data = Dataset()
 dataset = data.create()
-
-<<<<<<< HEAD
-=======
-print(dataset[0])
->>>>>>> 8120bc942b69f839086a6f96ebf12ddefb21305f
-
