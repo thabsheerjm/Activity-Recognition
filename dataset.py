@@ -59,7 +59,6 @@ class Dataset:
 
         return True
 
-# main 
-        
-data = Dataset()
-dataset = data.create()
+if __name__ == '__main__':
+    data = Dataset()
+    dataset = data.create() #build the dataset
