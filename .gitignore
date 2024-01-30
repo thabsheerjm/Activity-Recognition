@@ -162,11 +162,7 @@ cython_debug/
 
 # data
 UCF50/
-<<<<<<< HEAD
 UCF50.rar
 data/features.npy
 data/labels.npy
 data/paths.npy
-=======
-UCF50.rar
->>>>>>> 8120bc942b69f839086a6f96ebf12ddefb21305f
