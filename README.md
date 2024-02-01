@@ -3,6 +3,9 @@ Project on Human activity Recognition
 
 ## Method
 
+### Convlstm
+
+
 ## How to Run 
  * Create the dataset set by running the `dataset.py`
    ```
